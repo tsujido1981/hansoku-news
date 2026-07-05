@@ -56,6 +56,16 @@
   .links { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); font-size: 12.5px; }
   .links a { color: #1c6e8c; text-decoration: none; margin-right: 10px; }
   .links a:hover { text-decoration: underline; }
+  table.pl {
+    width: 100%; border-collapse: collapse; background: var(--card);
+    border: 1px solid var(--line); font-size: 13px;
+  }
+  table.pl th, table.pl td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: center; }
+  table.pl th { background: #eef1f4; color: #2b4a5a; font-weight: 600; }
+  table.pl td.name { text-align: left; font-weight: 600; white-space: nowrap; }
+  table.pl .up { color: #1c6e8c; font-weight: 600; }
+  table.pl .down { color: #b0483a; font-weight: 600; }
+  .pl-note { font-size: 12px; color: var(--sub); margin-top: 8px; line-height: 1.6; }
   .note {
     background: #fbf7ec; border: 1px solid #eadfc4; border-radius: 10px;
     padding: 14px 18px; font-size: 13px; color: #6a5a35; margin-top: 30px;
@@ -221,6 +231,33 @@
 
 </div>
 
+<h2>関東主要チェーン 月次実績(既存店・前年同月比)</h2>
+<table class="pl">
+  <thead>
+    <tr>
+      <th rowspan="2">会社</th>
+      <th colspan="3">2026年6月度(公表され次第更新)</th>
+      <th colspan="3">2026年5月度(確定)</th>
+    </tr>
+    <tr>
+      <th>売上</th><th>客数</th><th>客単価</th>
+      <th>売上</th><th>客数</th><th>客単価</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="name">ヤオコー</td><td>-</td><td>-</td><td>-</td><td class="up">+5.5%</td><td class="up">+2.6%</td><td class="up">+2.7%</td></tr>
+    <tr><td class="name">ライフ</td><td>-</td><td>-</td><td>-</td><td class="up">+4.9%</td><td class="up">+2.5%</td><td class="up">+2.3%</td></tr>
+    <tr><td class="name">サミット</td><td>-</td><td>-</td><td>-</td><td class="up">+4.3%</td><td>-</td><td>-</td></tr>
+    <tr><td class="name">東急ストア</td><td>-</td><td>-</td><td>-</td><td class="down">-0.5%</td><td>-</td><td>-</td></tr>
+    <tr><td class="name">カスミ</td><td>-</td><td>-</td><td>-</td><td class="up">+1.0%</td><td class="up">+0.7%</td><td class="up">+0.3%</td></tr>
+  </tbody>
+</table>
+<div class="pl-note">
+  ・各社の公表資料・流通ニュース等の報道に基づく既存店(開店1年以上の店)の前年同月比。6月度は各社が公表し次第、順次「-」を数字に置き換えます。<br>
+  ・サミット・東急ストアは客数・客単価を公表していません。<br>
+  ・成城石井・ロピア・オーケー・まいばすけっとは月次実績を公表していないため掲載していません。
+</div>
+
 <h2 class="local">全国のこだわりローカル企業</h2>
 <div class="grid">
 
@@ -266,6 +303,56 @@
       <a href="https://jouhou.nagoya/sapore-meitetsu/" target="_blank">名古屋駅出店の報道</a>
       <a href="https://www.nikkei.com/article/DGXZQOFD195JM0Z10C26A6000000/" target="_blank">日経記事</a>
       <a href="https://www.instagram.com/saporeatsuta_official/" target="_blank">Instagram(熱田店)</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ツルヤ</h3>
+    <div class="area">長野・群馬(42店舗)</div>
+    <ul>
+      <li><span class="tag t-item">商品</span>オリジナル商品約1,300品。信州産素材・無添加中心で、ジャムやドライフルーツは全国的に有名</li>
+      <li><span class="tag t-news">企業</span>長野県の小売業で売上トップのご当地スーパー。観光客の「お土産買い」の聖地としても人気</li>
+    </ul>
+    <div class="links">
+      <a href="https://www.tsuruya-corp.co.jp/" target="_blank">公式サイト</a>
+      <a href="https://tokubai.co.jp/ツルヤ" target="_blank">チラシ(トクバイ)</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>いかりスーパー</h3>
+    <div class="area">兵庫・阪神間中心</div>
+    <ul>
+      <li><span class="tag t-item">商品</span>惣菜・パン・洋菓子・牛乳など数百種類を自社工場で製造する「いかりブランド」が看板</li>
+      <li><span class="tag t-item">売場</span>独自の「いかり基準」で商品を厳選。関西の高級スーパーの代名詞的存在</li>
+    </ul>
+    <div class="links">
+      <a href="https://www.ikarisuper.co.jp/" target="_blank">公式サイト</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>オオゼキ</h3>
+    <div class="area">東京・首都圏(駅前立地)</div>
+    <ul>
+      <li><span class="tag t-item">売場</span>店ごとに仕入れ・品揃え・看板まで変える「超個店主義」。トマトが30種類並ぶ店も</li>
+      <li><span class="tag t-item">商品</span>精肉は店内でブロックから加工、青果・鮮魚は毎日市場で直接買い付け。同業の2~3倍を売る店もある高収益スーパー</li>
+    </ul>
+    <div class="links">
+      <a href="https://www.ozeki-net.co.jp/" target="_blank">公式サイト</a>
+      <a href="https://tokubai.co.jp/オオゼキ" target="_blank">チラシ(トクバイ)</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>紀ノ國屋</h3>
+    <div class="area">東京・首都圏</div>
+    <ul>
+      <li><span class="tag t-news">企業</span>日本初のセルフサービス式スーパーとされる高級スーパーの草分け。いかりスーパー創業者が手本にした店としても知られる</li>
+      <li><span class="tag t-item">商品</span>オリジナル商品と輸入食材に強く、「高級だと思うスーパー」ランキングの常連</li>
+    </ul>
+    <div class="links">
+      <a href="https://www.e-kinokuniya.com/" target="_blank">公式サイト</a>
     </div>
   </div>
 
